@@ -20,11 +20,8 @@ describe("isUserNameValid()", () => {
     it("should not validate spaces", () => {
         expect(isUserNameValid(' ')).toBe(false);
     });
-    it("should not validate numbers", () => {
-        expect(isUserNameValid('a12')).toBe(false);
-    });
     it("should not validate special characters", () => {
-        expect(isUserNameValid('a&-')).toBe(false);
+        expect(isUserNameValid('a@*')).toBe(false);
     });
 });
 
